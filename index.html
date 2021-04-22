@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e45e2c0583.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Daily Weather Forecast</h1>
+        <br />
+        <form class="search-form">
+            <input type="text" placeholder="Enter city name here" autocomplete="off" autofocus="on" id="search-input" />
+            <input type="submit" value="submit" />
+            <button type="button" class="btn" id="current-location-button">
+                <i class="fas fa-map-marker-alt" aria-hidden="true" value="search"></i>
+            </button>
+        </form>
+        <br />
+        <div class="row gx-5">
+            <div class="col-6">
+                <div class="p-3">
+                    <h2 class=cityName>
+                        Essen
+                    </h2>
+                    <h2 class=currentTime>
+                    </h2>
+                    <br />
+                    <span style="font-size: 2em; color: palevioletred;">
+                        <i class="fas fa-cloud-sun"></i>
+                    </span>
+                    <br />
+                    <h2>
+                        <span style="font-size: 2em; color: rgb(131, 131, 250);" class="temp" id="temperature">9</span>
+                        <span class="degrees">
+                            <a href="#" id="celcius-link">°C</a> |
+                            <a href="#" id="fahrenheit-link">°F</a>
+                        </span>
+                        </span>
+                    </h2>
+                    <br />
+                    <h4>
+                        14° / 8° Mostly Sunny
+                    </h4>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3">
+                    <h3>
+                        5 Days Forecast
+                    </h3>
+                    <br />
+                    <h5>
+                        Tomorrow
+                        <br />
+                        <span style="color: rgb(73, 70, 250);">
+                            <i class="fas fa-cloud-sun"></i> 21° / 5°
+                        </span>
+                    </h5>
+                    <h5>
+                        Tuesday
+                        <br />
+                        <span style="color: rgb(73, 70, 250);">
+                            <i class="fas fa-cloud-sun"></i> 24° / 7°
+                        </span>
+                    </h5>
+                    <h5>
+                        Wednesday
+                        <br />
+                        <span style="color: rgb(73, 70, 250);">
+                            <i class="fas fa-cloud-sun"></i> 24° / 7°
+                        </span>
+                    </h5>
+                    <h5>
+                        Thursday
+                        <br />
+                        <span style="color: rgb(73, 70, 250);">
+                            <i class="fas fa-cloud-sun"></i> 16° / 3°
+                        </span>
+                    </h5>
+                    <h5>
+                        Friday
+                        <br />
+                        <span style="color: rgb(73, 70, 250);">
+                            <i class="fas fa-cloud"></i> 11° / 3°
+                        </span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <br />
+        <p>
+            Coded by Yacinta Hostiningtyas
+        </p>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
